@@ -14,7 +14,7 @@ This is a fork of the Copy Maven Plugin from [Antibrumm/copy-maven-plugin](https
 
 ## Requirements
 * Java 8
-* Maven 3.2.0+
+* Maven 3.5.2+
 
 ## Usage
 ```xml
