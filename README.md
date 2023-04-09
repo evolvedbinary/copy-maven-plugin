@@ -1,5 +1,6 @@
 # Copy Maven Plugin
 
+[![Build Status](https://github.com/evolvedbinary/copy-maven-plugin/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/evolvedbinary/copy-maven-plugin/actions/workflows/ci.yml)
 [![Java 8](https://img.shields.io/badge/java-8-blue.svg)](https://adoptopenjdk.net/)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.txt)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.evolvedbinary.maven.mfrey/opy-maven-plugin/badge.svg)](https://search.maven.org/search?q=g:com.evolvedbinary.maven.mfrey)
@@ -10,7 +11,6 @@ Also replaces contents inside the copied files on the fly.
 ## Provenance
 This is a fork of the Copy Maven Plugin from [Antibrumm/copy-maven-plugin](https://github.com/Antibrumm/copy-maven-plugin), which itself was inspired by the `goldin` `copy-maven-plugin`. 
 
-[![Build Status](https://travis-ci.org/evolvedbinary/copy-maven-plugin.png)](https://travis-ci.org/Antibrumm/copy-maven-plugin)
 
 ## Requirements
 * Java 8
