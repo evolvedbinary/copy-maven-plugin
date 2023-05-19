@@ -1,28 +1,27 @@
+# Copy Maven Plugin
 
-Copy Maven Plugin
-=================
+[![Java 8](https://img.shields.io/badge/java-8-blue.svg)](https://adoptopenjdk.net/)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.txt)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.evolvedbinary.maven.mfrey/opy-maven-plugin/badge.svg)](https://search.maven.org/search?q=g:com.evolvedbinary.maven.mfrey)
 
 A Maven Plugin to copy files from one path to another based on several `path` instructions.
 Also replaces contents inside the copied files on the fly.
 
-Inspired by the `goldin` `copy-maven-plugin` 
+## Provenance
+This is a fork of the Copy Maven Plugin from [Antibrumm/copy-maven-plugin](https://github.com/Antibrumm/copy-maven-plugin), which itself was inspired by the `goldin` `copy-maven-plugin`. 
 
-[![Build Status](https://travis-ci.org/Antibrumm/copy-maven-plugin.png)](https://travis-ci.org/Antibrumm/copy-maven-plugin)
+[![Build Status](https://travis-ci.org/evolvedbinary/copy-maven-plugin.png)](https://travis-ci.org/Antibrumm/copy-maven-plugin)
 
-Requirements
-------------
+## Requirements
+* Java 8
+* Maven 3.2.0+
 
- - Java 8
- - Maven 3.2.0+
-
-Usage
------
-
+## Usage
 ```xml
 <plugin>
-    <groupId>ch.mfrey.maven.plugin</groupId>
+    <groupId>com.evolvedbinary.maven.mfrey</groupId>
     <artifactId>copy-maven-plugin</artifactId>
-    <version>0.0.5</version>
+    <version>2.0.0-SNAPSHOT</version>
     <executions>
         <execution>
             <id>copy</id>
@@ -89,8 +88,7 @@ Usage
 </plugin>
 ```
 
-Options
--------
+## Options
 ```xml
 <showfiles>true</showfiles>
 <resource>
