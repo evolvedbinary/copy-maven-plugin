@@ -1,3 +1,20 @@
+<!--
+
+    Copyright © 2015 Martin Frey (mfrey.ch)
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
@@ -15,6 +32,8 @@
 	<name>Copy Maven Plugin</name>
 	<description>Maven Plugin to copy/move files and replace content in the same time</description>
 	<url>https://github.com/evolvedbinary/copy-maven-plugin</url>
+	<inceptionYear>2015</inceptionYear>
+
 	<licenses>
 		<license>
 			<name>The Apache Software License, Version 2.0</name>
@@ -90,6 +109,40 @@
 	</dependencies>
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>com.mycila</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+				<version>4.2</version>
+				<configuration>
+					<properties>
+						<owner>Martin Frey</owner>
+						<email>mfrey.ch</email>
+						<year>${project.inceptionYear}</year>
+					</properties>
+					<licenseSets>
+						<licenseSet>
+							<header>com/mycila/maven/plugin/license/templates/APACHE-2.txt</header>
+							<excludes>
+								<exclude>README.md</exclude>
+								<exclude>LICENSE</exclude>
+								<exclude>src/test/resources/**</exclude>
+							</excludes>
+						</licenseSet>
+					</licenseSets>
+					<failIfMissing>true</failIfMissing>
+					<strictCheck>true</strictCheck>
+					<encoding>${project.build.sourceEncoding}</encoding>
+				</configuration>
+				<executions>
+					<execution>
+						<id>check-headers</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>check</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
