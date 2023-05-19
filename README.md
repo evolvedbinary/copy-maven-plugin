@@ -21,7 +21,7 @@ This is a fork of the Copy Maven Plugin from [Antibrumm/copy-maven-plugin](https
 <plugin>
     <groupId>com.evolvedbinary.maven.mfrey</groupId>
     <artifactId>copy-maven-plugin</artifactId>
-    <version>2.0.0-SNAPSHOT</version>
+    <version>2.0.0</version>
     <executions>
         <execution>
             <id>copy</id>
